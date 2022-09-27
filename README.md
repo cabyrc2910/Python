@@ -1,1 +1,1 @@
-# Python
+# Работа в Python
