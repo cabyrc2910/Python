@@ -17,13 +17,13 @@
 
 
 
-N = int(input('Введите  число N: '))
-numbers_list = list(range(-N, N+1))
+size = int(input("Введите  число N: "))
+numbers_list = list(range(-size, size+1))
 path = 'file.txt'
 data = open(path,'r')
 sum = 1
-for i in data:
-    sum *= numbers_list[int(i)]
+for position in data:
+    sum *= numbers_list[int(position)]
 data.close()
 print(numbers_list)
 print(sum)

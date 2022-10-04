@@ -5,25 +5,13 @@
 
 
 # # print('Вы ввели не число если сумма окажется = 0')
-# number = input("Введите вещественное число: ") # создаём переменную для числа
-# result = 0                                      # создаём счётчик переменную result приравниваем к "0"
-# for i in number:                               # если переменная  i находится в числовом диапазоне, создаём условие
-#     if i.isdigit():                             #  если в переменной i  все символы в строке являются цифрами, то
+# number = input("Введите вещественное число: ")        # создаём переменную для числа
+# result = 0                                            # создаём счётчик переменную result приравниваем к "0"
+# for i in number:                                      # если переменная  i находится в числовом диапазоне, создаём условие
+#     if i.isdigit():                                   #  если в переменной i  все символы в строке являются цифрами, то
 #         # result = result + int(i)                
-#         result += int(i)                         # результат = предыдущий + i
+#         result += int(i)                              # результат = предыдущий + i
 # print(f"Сумма цифр числа {number} равна:', {result}")   #  вывод сообщения о результате
-
-
-
-number = int(input('Введите вещественное число: '))
-print(number)                                     
-number_string = str(abs(number)) 
-my_sum = 0
-for i  in number_string:
-    if i != ".": 
-        my_sum += int(i)                                             
-print(f"Сумма цифр числа {number} равна: {my_sum}")
-
 
 
 # number = float(input('Введите вещественное число: '))
@@ -41,3 +29,24 @@ print(f"Сумма цифр числа {number} равна: {my_sum}")
 # for i in list:
 #     sum += int(i)
 # print(f'Сумма цифр числа {number} равна:', sum)
+
+
+# number = int(input('Введите вещественное число: '))
+# print(number)                                     
+# number_string = str(abs(number)) 
+# my_sum = 0
+
+# for i  in number_string:
+#     if i != ".": my_sum += int(i)   
+
+# print(f"Сумма цифр числа {number} равна: {my_sum}")
+
+
+users_num = input('Укажите вещественное число: ')
+print(users_num) 
+nums_sum = 0
+
+for num in users_num:
+    if num.isdigit(): nums_sum += int(num)
+
+print(nums_sum)
