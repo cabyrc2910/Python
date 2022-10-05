@@ -5,8 +5,8 @@
 # 25, 5 ->  да
 # 8, 9 -> нет
 
-a = int(input())
-b = int(input())
+a = int(input('a ='))
+b = int(input('b = '))
 if a**a == b:
     print('да')
 else:

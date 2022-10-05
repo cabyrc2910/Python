@@ -11,6 +11,16 @@
 # mx = max(list([a,b,c,d,e]))
 # print(mx)
 
+
+namber_list = list(map(int, input().split()))   #   split() - разделитель через пробел
+print(max(namber_list))
+
+
+# from functools import reduce
+# list = [1, 4, 8, 7, 5]
+# print(reduce(max, list))
+
+
 # a, b, c, d, e = int(input()), int(input()), int(input()), int(input()), int(input())
 # print (max(list([a, b, c, d, e])))
 
@@ -27,14 +37,14 @@
 # print(max)
 
 
-a = int(input('Введите первое число: '))
-b = int(input('Введите второе число: '))
-c = int(input('Введите третье число: '))
-d = int(input('Введите четвертое число: '))
-e = int(input('Введите пятое число: '))
-numbers = [a,b,c,d,e]
-max = a
-for i in numbers:
-    if i > max:
-        max = i
-print('Максимальное число: ', max)
+# a = int(input('Введите первое число: '))
+# b = int(input('Введите второе число: '))
+# c = int(input('Введите третье число: '))
+# d = int(input('Введите четвертое число: '))
+# e = int(input('Введите пятое число: '))
+# numbers = [a,b,c,d,e]
+# max = a
+# for i in numbers:
+#     if i > max:
+#         max = i
+# print('Максимальное число: ', max)
