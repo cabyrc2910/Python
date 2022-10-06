@@ -1,6 +1,8 @@
 # Задайте список из вещественных чисел. Напишите программу, которая найдёт разницу между максимальным и минимальным значением дробной части элементов.
 # Пример: [1.1, 1.2, 3.1, 5, 10.01] => 0.19
 
+##################################################################
+
 # from itertools import count
 # import os
 # from unittest import result
@@ -9,6 +11,7 @@
 # new_list = [round(i % 1, 2) for i in source_list if i % 1 != 0]
 # print(f'{source_list} = > {max(new_list) - min(new_list)}')
 
+##################################################################
 
 # import os
 # os.system("cls")
@@ -19,7 +22,14 @@
 #         new_list.append(round(i % 1, 2))
 # print(f'{source_list} = > {max(new_list) - min(new_list)}')
 
+####################################################################
 
+source_list = [1.1, 1.2, 3.1, 5, 10.01]
+new_list = [round(i % 1, 2) for i in source_list if i % 1 != 0]     #= > 0.19
+# new_list = [i % 1 for i in source_list if i % 1 != 0]             #= > 0.19000000000000017
+print(f'{source_list} = > {max(new_list) - min(new_list)}')
+
+#####################################################################
 
 # import random
 # N = int(input('Введите количество элементов массива: '))
@@ -54,7 +64,7 @@
 
 # print(f'Разницу между максимальным и минимальным значением дробной части элементов равно: {round((list_max - list_min), 2)}')
 
-
+###########################################################################
 
 # import random
 # N = int(input('Введите количество элементов массива: '))
@@ -69,7 +79,7 @@
 # rev_result = max(my_list) - min(my_list)
 # print(round(rev_result, 2))
 
-
+###########################################################################
 
 # def inpun_int(msg= ""):
 #     while True:
@@ -114,10 +124,5 @@
 
 # print(min_max_delta(fraction_list(input_float_list())))
 
-
-source_list = [1.1, 1.2, 3.1, 5, 10.01]
-new_list = [round(i % 1, 2) for i in source_list if i % 1 != 0]     #= > 0.19
-# new_list = [i % 1 for i in source_list if i % 1 != 0]             #= > 0.19000000000000017
-print(f'{source_list} = > {max(new_list) - min(new_list)}')
 
 
