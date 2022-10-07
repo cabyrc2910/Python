@@ -1,7 +1,18 @@
-# Задайте список из вещественных чисел. Напишите программу, которая найдёт разницу между максимальным и минимальным значением дробной части элементов.
+# Задайте список из вещественных чисел. 
+# Напишите программу, которая найдёт разницу между максимальным и минимальным значением дробной части элементов.
 # Пример: [1.1, 1.2, 3.1, 5, 10.01] => 0.19
 
 ##################################################################
+
+my_list = [1.1, 1.2, 3.1, 5, 10.01]
+new_list = [(num % 1) for num in my_list if isinstance(num, float)]
+# type(num) == float
+print (new_list)
+max_num = max(new_list)
+min_num = min(new_list)
+print(max_num - min_num)
+
+################################################################
 
 # from itertools import count
 # import os
@@ -24,10 +35,24 @@
 
 ####################################################################
 
-source_list = [1.1, 1.2, 3.1, 5, 10.01]
-new_list = [round(i % 1, 2) for i in source_list if i % 1 != 0]     #= > 0.19
-# new_list = [i % 1 for i in source_list if i % 1 != 0]             #= > 0.19000000000000017
-print(f'{source_list} = > {max(new_list) - min(new_list)}')
+# my_list = [1.1, 1.2, 3.1, 5, 10.01]
+# max = my_list[0] % 1 * 100
+# min = my_list[0] % 1 * 100
+# j = int
+# for i in my_list:
+#     j = i % 1 * 100
+#     if j > 0:
+#         if j > max: max = j
+#         if j < min: min = j
+# result = (max - min) / 100
+# print(round(result, 2))
+
+####################################################################
+
+# source_list = [1.1, 1.2, 3.1, 5, 10.01]
+# new_list = [round(i % 1, 2) for i in source_list if i % 1 != 0]     #= > 0.19
+# # new_list = [i % 1 for i in source_list if i % 1 != 0]             #= > 0.19000000000000017
+# print(f'{source_list} = > {max(new_list) - min(new_list)}')
 
 #####################################################################
 

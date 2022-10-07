@@ -46,11 +46,20 @@
 
 ##########################################################################
 
-users_num = input('Укажите вещественное число: ')
-print(users_num) 
-nums_sum = 0
+# users_num = input('Укажите вещественное число: ')
+# print(users_num) 
+# nums_sum = 0
 
-for num in users_num:
-    if num.isdigit(): nums_sum += int(num)
+# for num in users_num:
+#     if num.isdigit(): nums_sum += int(num)
 
-print(nums_sum)
+# print(nums_sum)
+
+###########################################################################
+
+n = 234523.2345345      # input('Вещественное число')
+#234523.2345345.is_integer() - False
+#234523.0.is_integer() - True
+while not float (n).is_integer():    # is_integer (метод) - функция проверяет является ли вещественное число (float) целочисленным
+    n *= 10
+    print(n)

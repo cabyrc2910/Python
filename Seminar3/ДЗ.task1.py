@@ -2,15 +2,13 @@
 # Пример: [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
 ##########################################################################
-# import os
-# os.system("cls")
 
-# list = [2, 3, 5, 9, 3]
-# my_summ = 0
-# for i in range(len(list)):
-#     if i % 2:
-#         my_summ += list[i]
-# print(f"Сумма равна: {my_summ}")
+list = [2, 3, 5, 9, 3]
+my_summ = 0
+for i in range(len(list)):
+    if i % 2:
+        my_summ += list[i]
+print(f"Сумма равна: {my_summ}")
 
 ############################################################################
 
@@ -27,13 +25,13 @@
 
 ##############################################################################
 
-import random
-num = int(input('Введите число: '))
-num_list =[]
-for i in range(num):
-    num_list.append(random.randint(1, 10))
-print(num_list)  
-print(sum(num_list[::2]))   #   срез, складываем элементы cписка через один начиная с первого
+# import random
+# num = int(input('Введите число: '))
+# num_list =[]
+# for i in range(num):
+#     num_list.append(random.randint(1, 10))
+# print(num_list)  
+# print(sum(num_list[::2]))   #   срез, складываем элементы cписка через один начиная с первого
 
 ###############################################################################
 
@@ -68,7 +66,7 @@ print(sum(num_list[::2]))   #   срез, складываем элементы 
 
 # def sum_of_odd(number_list):
 #     result = 0
-#     for i in range(len(number_list)):   # перебор по нумерам индексов 0т 0 до длины -1
+#     for i in range(len(number_list)):   # перебор по нумерам индексов от 0 до длины -1
 #         if i % 2 == 1:                  # проверяемна нечётность по каждому из индексов остаток от деления на 2 == 1
 #             result += number_list[i]
 #     return result
