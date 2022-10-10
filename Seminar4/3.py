@@ -18,6 +18,7 @@ while not(nok%a == 0 and nok%b == 0):  # while nok%a !+0 or nok%b !=0:
     nok += max(a, b)
 print(nok)  #  24
 
+#########################################################
 
 # a, b = 1000, 1001
 # nok = max(a, b)
