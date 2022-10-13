@@ -11,28 +11,28 @@ print(new_text)
 
 ###############################################################################
 
-my_text = 'Скажика дядя ведь не даромабв Москва спалеабвнная пажаром французам отдана'
-print(my_text)
+# my_text = 'оафвену драбвмлдт йемпаывпимдоа щдшабвуроа шгкупрг'
+# print(my_text)
 
-my_list = my_text.split()
-print(my_list)
+# my_list = my_text.split()
+# print(my_list)
 
-for item in my_list:
-    if 'абв' in item:
-        my_list.remove(item)
+# for item in my_list:
+#     if 'абв' in item:
+#         my_list.remove(item)
 
-print(my_list)
+# print(my_list)
 
 ################################################################################
 
-import random
-# generate random words from syllables
-syllables = ["ма", "за", "ба", "ка", "ша", "бв"]
-print(random.sample(syllables, 2))
-text = list(map(lambda x: "".join(random.sample(syllables, 3)),
-            range(random.randint(12, 15))))
-print(f' TEXT : {" ".join(text)}')
-print(*text)
-# search for syllable "абв" and delete it with whole word
-parsed_text = list(x for x in text if "абв" not in x)
-print(f'PARSED: {" ".join(parsed_text)}')
+# import random
+# # generate random words from syllables
+# syllables = ["ма", "за", "ба", "ка", "ша", "бв"]
+# print(random.sample(syllables, 2))
+# text = list(map(lambda x: "".join(random.sample(syllables, 3)),
+#             range(random.randint(12, 15))))
+# print(f' TEXT : {" ".join(text)}')
+# print(*text)
+# # search for syllable "абв" and delete it with whole word
+# parsed_text = list(x for x in text if "абв" not in x)
+# print(f'PARSED: {" ".join(parsed_text)}')
