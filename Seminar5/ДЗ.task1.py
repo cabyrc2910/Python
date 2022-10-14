@@ -36,3 +36,10 @@ print(new_text)
 # # search for syllable "абв" and delete it with whole word
 # parsed_text = list(x for x in text if "абв" not in x)
 # print(f'PARSED: {" ".join(parsed_text)}')
+
+#################################################################################
+
+# my_text = 'Напишите программу, удаляющую из текста все слова, содержащие "абв".'
+# my_text = list(filter(lambda x: 'абв' not in x, my_text.split()))
+# my = " ".join(my_text)
+# print(my)
