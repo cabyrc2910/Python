@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./Lecture04/Задача1"
+    ]
+}

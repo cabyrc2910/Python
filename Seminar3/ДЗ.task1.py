@@ -3,12 +3,14 @@
 
 ##########################################################################
 
-list = [2, 3, 5, 9, 3]
-my_summ = 0
-for i in range(len(list)):
-    if i % 2:
-        my_summ += list[i]
-print(f"Сумма равна: {my_summ}")
+# from random import random
+
+# list = [2, 3, 5, 9, 3]
+# my_summ = 0
+# for i in range(len(list)):
+#     if i % 2:
+#         my_summ += list[i]
+# print(f"Сумма равна: {my_summ}")
 
 ############################################################################
 
@@ -25,16 +27,6 @@ print(f"Сумма равна: {my_summ}")
 
 ##############################################################################
 
-# import random
-# num = int(input('Введите число: '))
-# num_list =[]
-# for i in range(num):
-#     num_list.append(random.randint(1, 10))
-# print(num_list)  
-# print(sum(num_list[::2]))   #   срез, складываем элементы cписка через один начиная с первого
-
-###############################################################################
-
 # my_list = [2, 3, 5, 9, 3]
 # num_sum = 0
 # for item in range(1, len(my_list), 2):
@@ -45,6 +37,22 @@ print(f"Сумма равна: {my_summ}")
 
 # my_list = [2, 3, 5, 9, 3]
 # print(f'Sum => {sum(my_list[1::2])}')
+
+##############################################################################
+
+import random
+my_list = [random.randint(0,9)for x in range(random.randint(5,10))]
+odd_list = [x for n, x in enumerate(my_list) if n %2 != 0]
+print(f'{my_list} => odd indexes has values {" и ".join(map(str, odd_list))}, sum is{sum(odd_list)}')
+
+###############################################################################
+# import random
+# num = int(input('Введите число: '))
+# num_list =[]
+# for i in range(num):
+#     num_list.append(random.randint(1, 10))
+# print(num_list)  
+# print(sum(num_list[::2]))   #   срез, складываем элементы cписка через один начиная с первого
 
 #################################################################################
 

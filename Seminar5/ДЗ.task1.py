@@ -1,14 +1,22 @@
 ############################################################################
 #  Напишите программу, удаляющую из текста все слова, содержащие ""абв"".
 ############################################################################
-import os
 
-os.system("cls")
+import random
+syllables = ("ма", "за", "ба", "ка", "ша", "бв")
+text = list(map(lambda x: "".join(random.sample(syllables,2)), range(random.randint(14,16))))
+print(*text)
+print(*filter(lambda x: "абв" not in x, text))
 
-my_text = 'ываабв лповап абвцукв алоабвабв ываываыв'
-my_text = filter(lambda x: 'абв' not in x, my_text.split())
-new_text = " ".join(my_text)
-print(new_text)
+############################################################################
+# import os
+
+# os.system("cls")
+
+# my_text = 'ываабв лповап абвцукв алоабвабв ываываыв'
+# my_text = filter(lambda x: 'абв' not in x, my_text.split())
+# new_text = " ".join(my_text)
+# print(new_text)
 
 ###############################################################################
 

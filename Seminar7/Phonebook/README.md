@@ -35,3 +35,19 @@
 #         for line in fin:
 #             record = dict(zip(fields, line.strip().split(',')))
 #             data.append(record)
+
+
+        |  Форматы:  |  CVS,JSON,XML                            |
+        |------------|------------------------------------------|
+        |Фамилия_1   |       Фамилия_1;Имя_1;Телефон_1;Опиание_1|
+        |Имя_1       |       Фамилия_2;Имя_2;Телефон_2;Опиание_2|
+        |Телефон_1   |                                          |
+        |Описание_1  |                                          |
+        
+        * Модули: 
+        1. main.py
+        2. controller.py  
+        3. input.py  
+        4. output.py  
+        5. interface.py  
+
