@@ -1,5 +1,7 @@
 {
     "python.analysis.extraPaths": [
-        "./Lecture04/Задача1"
-    ]
+        "./Lecture04/Задача1",
+        "./Lecture01"
+    ],
+    "python.formatting.provider": "black"
 }

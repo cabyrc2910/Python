@@ -21,14 +21,14 @@
 value = 12334
 # print(type(value))
 s = 'hello "world'  # кавычки
-# s = 'hello \nworld'  # переход на новую строку
+# s = 'hello \nworld'  # \n - переход на новую строку
 a = 123
 b = 1.23
 # print(s) # вывод строки
 # print(a, b, s) # вывод нескольких переменных
 # print(a, '-',b, '-', s) # вставка дополнительных строк
-# print('{1} - {2} - {0}'.format(a, b, s)) # форматированный вывод
-# print(f'{a} - {b} - {s}') # форматированный вывод
+# print('{1} - {2} - {0}'.format(a, b, s)) # форматированный вывод, изменяем порядок
+# print(f'{a} - {b} - {s}') # форматированный вывод, интерполяция
 # f= True # логическая переменная
 # print(f)
 
@@ -311,13 +311,13 @@ b = 1.23
   #  bodi line n
   #  optional return
 
-# def f(x):
-#     if x == 1:
-#         return 'Целое'
-#     elif x == 2.3:
-#         return 23
-#     else:
-#         return
+def f(x):
+    if x == 1:
+        return 'Целое'
+    elif x == 2.3:
+        return 23
+    else:
+        return
 
 # arg = 1  
 # print(f(arg))

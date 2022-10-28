@@ -1,5 +1,6 @@
 import json
 import csv
+from pathlib import Path
 
 def show_menu() -> int:
     print("\n" + "=" * 20)
@@ -11,12 +12,13 @@ def show_menu() -> int:
     print("5. Удалить сотрудника")
     print("6. Обновить данные сотрудника")
     print("7. Экспортировать данные в формате json")
-    print("8. Экспортировать данные в формате cmv")
+    print("8. Экспортировать данные в формате csv")
     print("9. Закончить работу")
     return int(input("Введите номер необходимого действия: "))
 
-# {"id": 1, "last_name": "\u0418\u0432\u0430\u043d\u043e\u0432", "first_name": "\u0418\u0432\u0430\u043d \u041f\u0435\u0442\u0440\u043e\u0432\u0438\u0447", "position": "\u0433\u0435\u043d\u0435\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0434\u0438\u0440\u0435\u043a\u0442\u043e\u0440", "phone_number": "111", "salary": 1000.0}
-# {"id": 2, "last_name": "\u0418\u0432\u0430\u043d\u043e\u0432\u0430", "first_name": "\u041c\u0430\u0440\u0438\u044f \u0418\u0432\u0430\u043d\u043e\u0432\u043d\u0430", "position": "\u0433\u043b\u0430\u0432\u043d\u044b\u0439 \u0431\u0443\u0445\u0433\u0430\u043b\u0442\u0435\u0440", "phone_number": "222", "salary": 999.99}
+# пример json
+{"id": 1, "last_name": "\u0418\u0432\u0430\u043d\u043e\u0432", "first_name": "\u0418\u0432\u0430\u043d \u041f\u0435\u0442\u0440\u043e\u0432\u0438\u0447", "position": "\u0433\u0435\u043d\u0435\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0434\u0438\u0440\u0435\u043a\u0442\u043e\u0440", "phone_number": "111", "salary": 1000.0}
+{"id": 2, "last_name": "\u0418\u0432\u0430\u043d\u043e\u0432\u0430", "first_name": "\u041c\u0430\u0440\u0438\u044f \u0418\u0432\u0430\u043d\u043e\u0432\u043d\u0430", "position": "\u0433\u043b\u0430\u0432\u043d\u044b\u0439 \u0431\u0443\u0445\u0433\u0430\u043b\u0442\u0435\u0440", "phone_number": "222", "salary": 999.99}
 
 # 1 Иванов Иван Петрович генеральный директор 111 1000.0
 # 2 Иванова Мария Ивановна главный бухгалтер 222 999.99
@@ -47,8 +49,8 @@ def read_json() -> list:
 def write_csv(employees: list):
     with open(Path.cwd() / 'database.csv', 'w', encoding='utf-8') as fout:
         csv_writer = csv.writer(fout)
-    for employee in employees:
-        csv_writer.writerow(employee.values())
+        for employee in employees:
+            csv_writer.writerow(employee.values())
 
 def write_json(employees: list):
     with open(Path.cwd() / 'database02.json', 'w', encoding='utf-8') as fout:

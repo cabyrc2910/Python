@@ -8,38 +8,38 @@
 # print(isOdd(4))
 
 #####################################################
-## Библиотека: prpgress
+## Библиотека: progress
 #####################################################
 
-# from progress.bar import Bar
-# import time
+from progress.bar import Bar
+import time
 
-# bar = Bar('Processing', max=20)
-# for i in range(20):
-#     # Do some work
-#     time.sleep(1)
-#     bar.next()
-# bar.finish()
+bar = Bar('Processing', max=5)
+for i in range(20):
+    # Do some work
+    time.sleep(1)
+    bar.next()
+bar.finish()
 
 #####################################################
 ## Библиотека: emoji
 #####################################################
 
-# import emoji
+import emoji
 
-# print(emoji.emojize('Python is :thumbs_up:'))
+print(emoji.emojize('Python is :thumbs_up:'))
 
 #####################################################
 ## Библиотека: matplotlib
 #####################################################
 
-# import matplotlib.pyplot as plt
-# import numpy as np
+import matplotlib.pyplot as plt
+import numpy as np
 
-# list =[1,2,3,2,7]
-# plt.plot(list, )
+list =[1,2,3,2,7]
+plt.plot(list, )
 
-# plt.show()
+plt.show()
 
 #####################################################
 ## Библиотека: telegram
@@ -57,6 +57,6 @@ updater.dispatcher.add_handler(CommandHandler('help', help_command))
 updater.dispatcher.add_handler(CommandHandler('sum', sum_command))
 
 
-print('server start')
-updater.start_polling()
-updater.idle() 
+# print('server start')
+# updater.start_polling()
+# updater.idle() 
