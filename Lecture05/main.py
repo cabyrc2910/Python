@@ -43,6 +43,8 @@ plt.show()
 
 #####################################################
 ## Библиотека: telegram
+## Команды:   pip install python-telegram-bot --pre
+#             pip install python-telegram-bot --upgrade       
 #####################################################
 
 from telegram import Update
